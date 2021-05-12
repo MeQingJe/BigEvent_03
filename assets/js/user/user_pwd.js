@@ -27,7 +27,7 @@ $(function() {
             success: function(res) {
                 if (res.status != 0) return layer.msg(res.message);
                 layer.msg('更新密码成功');
-                $('#formPwd input').val('');
+                $('#formPwd')[0].reset();
             }
         });
     });
